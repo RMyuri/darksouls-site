@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Quiz.css">
+  <title>Quiz</title>
+
+<body>
+  
+  </style>
+  
+  <head>
+    <nav id="barra"><a class="logo" href="main.html">Sair do Quiz</a></nav>
+    <title>Recarregar Página</title>
+</head>
+<body>
+    
+</body>
+  </head>
+  <div class="quiz-container">
+    <body>
+      <h1>Quiz Dark Souls</h1>
+      <p id="question"></p>
+      <button id="option1" onclick="checkAnswer(1)"></button>
+      <button id="option2" onclick="checkAnswer(2)"></button>
+      <button id="option3" onclick="checkAnswer(3)"></button>
+      <div id="feedback"></div>
+      <p>Acertos: <span id="correct-count">0</span></p>
+      <p>Erros: <span id="incorrect-count">0</span></p>
+  <button id="Reiniciar" onclick="recarregarPagina()">Reiniciar o Quiz</button>
+
+    <script>
+        function recarregarPagina() {
+            location.reload();
+        }
+    </script>
+      <script src="quiz.js"></script>
+  </body>
+   
+
+  <script src="Quiz.js"></script>
+</body>
+
+</html>
