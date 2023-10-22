@@ -46,3 +46,81 @@ main {
   letter-spacing: 3px;
   margin-left: 32px;
 }
+
+body {
+  background-image: url('16c65a93f2fd2b2e4979e977dd97d041.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  margin: 0;
+  padding: 0;
+}
+
+.quiz-container {
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+/* Estilos para o menu hamburguer */
+.menu-container {
+  position: relative;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #ff0000;
+  margin: 3px 0;
+  border-radius: 3px;
+}
+
+/* Estilos para o menu de navegação */
+.menu {
+  position: absolute;
+  top: 0;
+  right: -260px; /* Esconda o menu inicialmente */
+  width: 250px;
+  height: 100%;
+  background-color: #ff0000;
+  transition: right 0.3s;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ff0000;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Mostrar o menu ao clicar no ícone do hamburguer */
+.menu-container.active .menu {
+  right: 0;
+}
+
