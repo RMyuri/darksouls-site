@@ -55,20 +55,34 @@
 
  main {
     border: px solid rgb(255, 255, 255);
-    width: 60rem;
-    height: auto;
-  }
-  main {
+    width: 50rem;
     background-color: #222121;
     display: flex;
-    margin: 20px;
+    margin: 1rem 6rem ;
   }
-
+ 
   header {
     display: flex;
     align-items: center;
+    background-color: #7e7e7e;
+    height:180px;
+    margin: 10px;
+    border-radius: 10px;
   }
 
+ main div.menu {
+    width: 200px;
+    background: #222121;
+    flex: none;
+    color: #fff;
+    font-size: larger;
+  }
+
+  main article {
+    padding: 5px 10px;
+    display: inline
+  }
+  
   header div.thumb {
     background-color: rgb(255, 255, 255);
     background-image: url("");
@@ -81,20 +95,9 @@
     flex: none;
     margin: 50px 50px;
     border: 1px solid rgb(255, 246, 246);
-    transform: scale(1.6);
   }
 
-  main div.menu {
-    width: 200px;
-    background: #222121;
-    flex: none;
-    color: #fff;
-  }
-
-  main article {
-    padding: 5px 10px;
-    display: inline
-  }
+ 
 
   
   
